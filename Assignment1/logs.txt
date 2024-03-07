@@ -2,10 +2,10 @@ __________________generate_reports____________________
 SUCCESS. Manufacturing Report created successfully
 ___________________________________________
 __________________generate_reports____________________
-SUCCESS. Sales Report created successfully
+SUCCESS. Distribution Report created successfully
 ___________________________________________
 __________________generate_reports____________________
-SUCCESS. Distribution Report created successfully
+SUCCESS. Warehouse Report created successfully
 ___________________________________________
 __________________daemon____________________
 Daemon is running.
@@ -24,28 +24,6 @@ Daemon Step 5 complete.
 ___________________________________________
 __________________collect_reports____________________
 All contents of shareDirectory moved to dashboardDirectory.
-___________________________________________
-
-__________________backup_dashboard____________________
-SUCCESS. All contents of dashboardDirectory copied to backupDirectory.
-___________________________________________
-
-__________________lock_directories____________________
-SUCCESS. shareDirectory locked.
-SUCCESS. dashboardDirectory locked.
-SUCCESS. backupDirectory locked.
-__________________lock_directories____________________
-___________________________________________
-
-__________________generate_reports____________________
-ERROR. File could not be created.
-___________________________________________
-
-__________________unlock_directories____________________
-SUCCESS. shareDirectory unlocked.
-SUCCESS. dashboardDirectory unlocked.
-SUCCESS. backupDirectory unlocked.
-__________________unlock_directories____________________
 ___________________________________________
 
 __________________check_file_uploads____________________
