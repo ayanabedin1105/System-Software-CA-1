@@ -1,5 +1,5 @@
 __________________generate_reports____________________
-SUCCESS. Manufacturing Report created successfully
+SUCCESS. Sales Report created successfully
 ___________________________________________
 __________________daemon____________________
 Daemon is running.
@@ -45,10 +45,25 @@ ___________________________________________
 __________________generate_reports____________________
 SUCCESS. Warehouse Report created successfully
 ___________________________________________
+__________________collect_reports____________________
+All contents of shareDirectory moved to dashboardDirectory.
+___________________________________________
+
 __________________check_file_uploads____________________
-SUCCESS. Warehouse report is present.
 ERROR. The following reports are missing:
 - Sales
+- Warehouse
+- Manufacturing
+- Distribution
+___________________________________________
+
+__________________generate_reports____________________
+SUCCESS. Sales Report created successfully
+___________________________________________
+__________________check_file_uploads____________________
+SUCCESS. Sales report is present.
+ERROR. The following reports are missing:
+- Warehouse
 - Manufacturing
 - Distribution
 ___________________________________________
