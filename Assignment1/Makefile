@@ -9,11 +9,11 @@ daemon: daemon.c backup_dashboard.c check_file_uploads.c collect_reports.c lock_
 run-daemon: daemon
 	./daemon
 	
-backup: backup_dashboard_3.c
-	$(CC) -o backup_dashboard_3 backup_dashboard_3.c
+backup: backup_dashboard_2.c
+	$(CC) -o backup_dashboard_2 backup_dashboard_2.c
 
 run-backup: backup
-	./backup_dashboard_3
+	./backup_dashboard_2
 
 reports: generate_reports_2.c
 	$(CC) -o generate_reports_2 generate_reports_2.c
@@ -46,7 +46,7 @@ run-collect: collect
 	./collect_reports_2
 
 clean:
-	rm -f daemon backup_dashboard_3 generate_reports_2 lock_directories_2 unlock_directories_2 check_file_uploads_2 collect_reports_2 logs.txt
+	rm -f daemon backup_dashboard_2 generate_reports_2 lock_directories_2 unlock_directories_2 check_file_uploads_2 collect_reports_2 logs.txt
 
 .PHONY: run
 

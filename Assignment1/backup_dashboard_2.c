@@ -8,6 +8,7 @@
 #include <string.h>
 #include <dirent.h>
 
+
 void backup_dashboard(void) {
     pid_t pid;
     int status;
@@ -54,16 +55,8 @@ void backup_dashboard(void) {
     fclose(fptr);
 }
 
+
 int main()
 {
-    // Schedule the backup to run every night at 1am
-    time_t now = time(NULL);
-    struct tm *t = localtime(&now);
-    if (t->tm_hour == 1 && t->tm_min == 0) {
-        syslog(LOG_INFO, "Starting scheduled backup_dashboard at 1am");
-        backup_dashboard();
-    }
-    else {
-        syslog(LOG_INFO, "Backup_dashboard not scheduled to run at this time");
-    }
+    backup_dashboard();
 }
