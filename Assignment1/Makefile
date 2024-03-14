@@ -1,4 +1,5 @@
 CC=gcc
+AUTH_PROGRAM=authentication_program
 
 all: daemon backup reports lock unlock check collect
 
@@ -46,3 +47,12 @@ run-collect: collect
 
 clean:
 	rm -f daemon backup_dashboard_3 generate_reports_2 lock_directories_2 unlock_directories_2 check_file_uploads_2 collect_reports_2 logs.txt
+
+.PHONY: run
+
+run: $(AUTH_PROGRAM)
+	./$(AUTH_PROGRAM) && ./daemon && ./backup_dashboard_3 && ./generate_reports_2 && ./lock_directories_2 && ./unlock_directories_2 && ./check_file_uploads_2 && ./collect_reports_2
+
+$(AUTH_PROGRAM): authentication_program.c
+	$(CC) -o $(AUTH_PROGRAM) authentication_program.c
+
