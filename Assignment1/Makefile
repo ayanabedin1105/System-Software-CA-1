@@ -45,4 +45,4 @@ run-collect: collect
 	./collect_reports_2
 
 clean:
-	rm -f daemon backup_dashboard_3 generate_reports_2 lock_directories_2 unlock_directories_2 check_file_uploads_2 collect_reports_2
+	rm -f daemon backup_dashboard_3 generate_reports_2 lock_directories_2 unlock_directories_2 check_file_uploads_2 collect_reports_2 logs.txt
